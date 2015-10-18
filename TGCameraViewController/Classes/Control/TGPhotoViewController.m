@@ -84,6 +84,11 @@ static NSString* const kTGCacheVignetteKey = @"TGCacheVignetteKey";
     return viewController;
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [self filtersTapped];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
