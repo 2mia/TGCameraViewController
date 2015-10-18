@@ -45,7 +45,8 @@
     
     [session beginConfiguration];
     [session removeInput:deviceInput];
-    [session addInput:reverseDeviceInput];
+    if (reverseDeviceInput)
+        [session addInput:reverseDeviceInput];
     [session commitConfiguration];
 }
 
